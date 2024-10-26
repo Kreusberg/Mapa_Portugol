@@ -24,12 +24,12 @@ int main() {
             printf("Digite a nota do aluno %d: ", j);
             scanf("%f", &notaAtual);
             somaNotasAtuais += notaAtual;
-            printf("== somaNotasAtuais == %3.2f \n", somaNotasAtuais);
+            printf("== somaNotasAtuais == %.2f \n", somaNotasAtuais);
         }
 
         printf("== sizeof(qtdAlunos) == %i \n", qtdAlunos);
         mediaAtual = somaNotasAtuais / qtdAlunos;
-        printf("== mediaAtual == %3.2f \n", mediaAtual);
+        printf("== mediaAtual == %.2f \n", mediaAtual);
 
         somaNotasAtuais = 0;
 
