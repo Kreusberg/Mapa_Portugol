@@ -7,8 +7,7 @@ int main() {
     float mediaAtual;
     float maiorMedia;
     int turmaComMaiorMedia;
-    int somaNotasAtuais;
-    int notasTurma[100];
+    float somaNotasAtuais;
 
     // solicita a quantidade de turmas
     printf("Informe a quantidade de turmas: ");
@@ -21,10 +20,11 @@ int main() {
 
         // solicita a nota individual de cada aluno
         for (int j = 1; j <= qtdAlunos; j++) {
+            int notaAtual;
             printf("Digite a nota do aluno %d: ", j);
-            scanf("%d", &notasTurma[j]);
-            somaNotasAtuais += notasTurma[j];
-            printf("== somaNotasAtuais == %d \n", somaNotasAtuais);
+            scanf("%d", &notaAtual);
+            somaNotasAtuais += notaAtual;
+            printf("== somaNotasAtuais == %3.2f \n", somaNotasAtuais);
         }
 
         printf("== sizeof(qtdAlunos) == %i \n", qtdAlunos);
