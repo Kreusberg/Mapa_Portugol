@@ -20,9 +20,9 @@ int main() {
 
         // solicita a nota individual de cada aluno
         for (int j = 1; j <= qtdAlunos; j++) {
-            int notaAtual;
+            float notaAtual;
             printf("Digite a nota do aluno %d: ", j);
-            scanf("%d", &notaAtual);
+            scanf("%f", &notaAtual);
             somaNotasAtuais += notaAtual;
             printf("== somaNotasAtuais == %3.2f \n", somaNotasAtuais);
         }
