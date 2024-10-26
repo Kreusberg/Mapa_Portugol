@@ -1,0 +1,40 @@
+Algoritmo "AtividadeMapa"
+// Disciplina   : ALGORITMOS E LÓGICA DE PROGRAMAÇÃO
+// Professor   : Pietro M. de Oliveira
+// Descrição   : Atividade Mapa
+// Autor(a)    : Lucas Lodi Kreusberg
+// Data atual  : 25/10/2024
+Var
+// Seção de Declarações das variáveis 
+   qtdTurmas, qtdAlunos, turmaComMaiorMedia, notaAtual, i, j : inteiro
+   mediaAtual, maiorMedia, somaNotasAtuais : real
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreva("Informe a quantidade de turmas: ")
+   Leia(qtdTurmas)
+   
+   Para i de 1 até qtdTurmas passo 1 faça
+        Escreva("Digite a quantidade de alunos da turma ", i, ": ")
+        Leia(qtdAlunos)
+
+        Para j de 1 até qtdAlunos passo 1 faça
+             Escreva("Digite a nota do aluno", j, ": ")
+             Leia(notaAtual)
+             somaNotasAtuais <- somaNotasAtuais + notaAtual
+        FimPara
+        
+        mediaAtual <- somaNotasAtuais / qtdAlunos;
+
+        somaNotasAtuais <- 0;
+        
+        Se (mediaAtual > maiorMedia) Então
+             maiorMedia <- mediaAtual
+             turmaComMaiorMedia <- i
+        FimSe
+        
+   FimPara
+
+        Escreva("Ao fim do programa, a turma com maior media eh a turma numero ", turmaComMaiorMedia)
+
+Fimalgoritmo
